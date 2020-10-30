@@ -8,7 +8,7 @@
 
 .App {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   font-family: "Poppins-Medium";
 }
 .test__layout {
@@ -22,7 +22,7 @@
     padding: 28px;
     position: relative;
     .bottom-logo {
-      position: absolute;
+      position: fixed;
       bottom: 26px;
     }
   }
@@ -96,7 +96,7 @@
         padding-left: 10px;
       }
     }
-    
+
     .content_items {
       display: flex;
       max-width: 100%;
@@ -124,22 +124,22 @@
       .search_blc {
         display: flex;
         justify-content: space-between;
-  
+
         .search {
           display: flex;
-  
+
           h2 {
             color: $gray;
           }
           .search_input {
             padding-left: 16px;
-  
+
             .ant-input-affix-wrapper {
               padding: 5.5px 0px;
               border: none;
               border-bottom: 1px solid $gray;
               background-color: transparent;
-  
+
               &:focus {
                 box-shadow: none;
                 border-right-width: 0px !important;
